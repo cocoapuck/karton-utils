@@ -10,7 +10,7 @@ class Utils(Karton):
     identity = "karton.utils"
     version = __version__
 
-
+    # Function to clean db while testing
     def clean_mwdb():
         files = self.mwdb.recent_objects(1000)
         for file in files:
